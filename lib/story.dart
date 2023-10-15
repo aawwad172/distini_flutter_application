@@ -1,5 +1,37 @@
-//TODO: Step 2 - Create a new class called Story.
+class Story {
+  String? _storyTitle;
+  String? _choice1;
+  String? _choice2;
 
-//TODO: Step 3 - Create 3 properties for this class, A. storyTitle to store the story text. B. choice1 to store the text for choice 1, C. choice2 to store the text for choice 2.
+  // Constructor
+  Story({String? storyTitle, String? choice1, String? choice2}) {
+    setStoryTitle(storyTitle);
+    setChoice1(choice1);
+    setChoice2(choice2);
+  }
 
-//TODO: Step 4 - Create a Constructor for this class to be able to initialise the properties created in step 3.
+  // Setters
+  void setStoryTitle(String? storyTitle) {
+    _storyTitle = storyTitle;
+  }
+
+  void setChoice1(String? choice1) {
+    _choice1 = choice1;
+  }
+
+  void setChoice2(String? choice2) {
+    _choice2 = choice2;
+  }
+
+  String? getStoryTitle() {
+    return _storyTitle;
+  }
+
+  String? getChoice1() {
+    return _choice1;
+  }
+
+  String? getChoice2() {
+    return _choice2;
+  }
+}
